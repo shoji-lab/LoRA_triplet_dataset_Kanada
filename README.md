@@ -28,7 +28,8 @@ The datasets support reproducible research in:
 ```
 data/
 ├── triplets_auto_visual/
-│   ├── triplets_auto_visual_dinov2.jsonl
+│   ├── train_triplets.jsonl
+│   ├── eval_triplets.jsonl
 │   └── README.md
 │
 ├── triplets_human_visual/
@@ -39,7 +40,7 @@ data/
     ├── ranking_gt_30_queries.csv
     └── README.md
 
-**metadata**/
+metadata/
 ├── train_ids_549.txt
 ├── eval_ids_150.txt
 ├── lora_metadata_used.csv
