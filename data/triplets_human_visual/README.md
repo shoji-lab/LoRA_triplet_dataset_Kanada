@@ -11,6 +11,7 @@ Each file is stored in **JSON Lines format**, where each line represents one tri
 
 ```json
 {"anchor": "<LoRA_ID>", "positive": "<LoRA_ID>", "negative": "<LoRA_ID>"}
+```
 
 Only LoRA identifiers and annotation results are included.
 LoRA weights, source images, and generated images are not redistributed.
