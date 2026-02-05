@@ -7,7 +7,7 @@ The datasets were constructed for research submitted to **ICMR 2026**.
 For full methodological details and experimental settings,  
 please refer to the corresponding paper:
 
-> 🔗 Paper link will be added after publication.
+> ここに論文のリンクを貼る？
 
 ---
 
@@ -53,7 +53,7 @@ Complete preprocessing, model design, and evaluation methodology
 are described in the paper.
 
 📄 Please refer to the paper for full details.  
-(The link will be added upon publication.)
+(ここにもリンク？)
 
 ---
 
