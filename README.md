@@ -1,13 +1,11 @@
-# LoRA Triplet Dataset (Kanada, Shoji Lab)
+# LoRA Triplet Dataset
 
 This repository provides benchmark datasets for evaluating  
 **similarity-based retrieval of style-transfer LoRA adapters**.
 
-The datasets were constructed for research submitted to **ICMR 2026**.  
-For full methodological details and experimental settings,  
-please refer to the corresponding paper:
-
-> ここに論文のリンクを貼る？
+The datasets were constructed as part of an **ongoing academic research project**
+on LoRA embedding and retrieval.  
+Further technical details will be released in a future publication.
 
 ---
 
@@ -18,10 +16,10 @@ and does **not redistribute any LoRA model weights**.
 
 The datasets support reproducible research in:
 
-- LoRA embedding learning  
-- Similarity-based LoRA retrieval  
+- LoRA embedding learning from internal parameters  
 - Triplet-based metric learning  
-- Human-aligned ranking evaluation for generative models  
+- Human-aligned similarity evaluation  
+- Retrieval ranking evaluation for generative models  
 
 ---
 
@@ -29,50 +27,64 @@ The datasets support reproducible research in:
 
 data/
 ├── triplets_auto_visual/
+│ ├── triplets_auto_visual_dinov2.jsonl
+│ └── README.md
+│
 ├── triplets_human_visual/
+│ ├── majority_triplets_5raters.jsonl
+│ └── README.md
+│
 └── ranking_human_visual/
+├── ranking_gt_30_queries.csv
+└── README.md
+
+metadata/
+├── train_ids_549.txt
+├── eval_ids_150.txt
+├── lora_metadata_used.csv
+└── split_description.md
 
 
-Each directory contains:
-
-- Dataset files  
-- A brief description of the dataset and annotation procedure  
-
-Please refer to the **README inside each directory** for details.
-
----
-
-## Relation to ICMR 2026 Submission
-
-These datasets were created for the following research:
-
-> **Learning LoRA Embeddings from Internal Parameters for  
-> Similarity-Based Retrieval of Style-Transfer Adapters**
-
-Complete preprocessing, model design, and evaluation methodology  
-are described in the paper.
-
-📄 Please refer to the paper for full details.  
-(ここにもリンク？)
+Each directory in `data/` contains dataset files and a brief README.  
+See the README in each subdirectory for details.
 
 ---
 
-## Important Notice
+## Reproducibility
 
-- This repository **does not include LoRA safetensors or model weights**.
-- Original LoRA models must be obtained from their **official distribution sources**.
-- Only **evaluation annotations and metadata** are provided.
+The file:
+
+metadata/lora_metadata_used.csv
+
+
+provides metadata for all LoRA models used in the experiments,  
+including identifiers, source URLs, and dataset splits.
+
+Together with:
+
+- `train_ids_549.txt`
+- `eval_ids_150.txt`
+
+this information enables reproducibility of the dataset construction.
 
 ---
 
-## Citation
+## Access to Original LoRA Models
 
-If you use this dataset, please cite:
+This repository **does not include LoRA model weights**.  
+Original models must be obtained from their official sources using  
+the URLs provided in `lora_metadata_used.csv`.
 
-```bibtex
-@inproceedings{kanada2026lora,
-  title     = {Learning LoRA Embeddings from Internal Parameters for Similarity-Based Retrieval of Style-Transfer Adapters},
-  author    = {Kanada, Yuro and others},
-  booktitle = {Proceedings of ICMR 2026},
-  year      = {2026}
-}
+---
+
+## License
+
+This repository distributes **annotations, metadata, and evaluation splits only**.  
+Original LoRA models remain subject to their respective licenses.
+
+---
+
+## Maintainer
+
+Yuro Kanada  
+Shoji Laboratory, Shizuoka University
