@@ -25,30 +25,32 @@ The datasets support reproducible research in:
 
 ## Repository Structure
 
+```
 data/
 ├── triplets_auto_visual/
-│ ├── triplets_auto_visual_dinov2.jsonl
-│ └── README.md
+│   ├── triplets_auto_visual_dinov2.jsonl
+│   └── README.md
 │
 ├── triplets_human_visual/
-│ ├── majority_triplets_5raters.jsonl
-│ └── README.md
+│   ├── majority_triplets_5raters.jsonl
+│   └── README.md
 │
 └── ranking_human_visual/
-├── ranking_gt_30_queries.csv
-└── README.md
+    ├── ranking_gt_30_queries.csv
+    └── README.md
 
 metadata/
 ├── train_ids_549.txt
 ├── eval_ids_150.txt
 ├── lora_metadata_used.csv
 └── split_description.md
-
+```
 
 Each directory in `data/` contains dataset files and a brief README.  
 See the README in each subdirectory for details.
 
 ---
+
 
 ## Reproducibility
 
