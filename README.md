@@ -33,7 +33,7 @@ data/
 │   └── README.md
 │
 ├── triplets_human_visual/
-│   ├── majority_triplets_5raters.jsonl
+│   ├── human_labeled_triplets.jsonl
 │   └── README.md
 │
 └── ranking_human_visual/
