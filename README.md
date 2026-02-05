@@ -25,6 +25,7 @@ The datasets support reproducible research in:
 
 ## Repository Structure
 
+```
 data/
 ├── triplets_auto_visual/
 │ ├── triplets_auto_visual_dinov2.jsonl
@@ -43,7 +44,7 @@ metadata/
 ├── eval_ids_150.txt
 ├── lora_metadata_used.csv
 └── split_description.md
-
+```
 
 Each directory in `data/` contains dataset files and a brief README.  
 See the README in each subdirectory for details.
