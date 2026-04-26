@@ -3,9 +3,8 @@
 This repository provides benchmark datasets for evaluating  
 **similarity-based retrieval of style-transfer LoRA adapters**.
 
-The datasets were constructed as part of an **ongoing academic research project**
-on LoRA embedding and retrieval.  
-Further technical details will be released in a future publication.
+The datasets were constructed as part of an academic research project
+on LoRA embedding and retrieval accepted to **ICMR 2026**.
 
 ---
 
@@ -77,6 +76,32 @@ this information enables reproducibility of the dataset construction.
 This repository **does not include LoRA model weights**.  
 Original models must be obtained from their official sources using  
 the URLs provided in `lora_metadata_used.csv`.
+
+---
+
+## Publication
+
+This dataset was used in the following paper:
+
+Retrieval of LoRA Models based on Layer-Wise Weight Embedding without Metadata, Yuro Kanada, Yuma Oe, Huu-Long Pham, Makoto P. Kato, Hiroaki Ohshima, Sumio Fujita and Yoshiyuki Shoji, Proc. of The 16th ACM International Conference on Multimedia Retrieval (ICMR2026), to appear, 2026.
+
+---
+
+## Citation
+
+If you use this dataset in your research, please cite the paper below. If a dataset DOI is assigned to this repository, please cite both the paper and the dataset DOI.
+
+```bibtex
+@inproceedings{kanada2026retrieval,
+  title = {Retrieval of LoRA Models based on Layer-Wise Weight Embedding without Metadata},
+  author = {Kanada, Yuro and Oe, Yuma and Pham, Huu-Long and Kato, Makoto P. and Ohshima, Hiroaki and Fujita, Sumio and Shoji, Yoshiyuki},
+  booktitle = {Proceedings of the 16th ACM International Conference on Multimedia Retrieval},
+  year = {2026},
+  note = {To appear}
+}
+```
+
+For maintainability, citation information is maintained in this top-level README. Subdirectory README files refer back to this section instead of duplicating the full citation.
 
 ---
 

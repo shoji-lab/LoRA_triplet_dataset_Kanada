@@ -39,4 +39,10 @@ This dataset enables evaluation of:
 Source images and LoRA-transformed images used during annotation  
 are **not redistributed** in this repository due to licensing considerations.
 
-Further methodological details will be described in a future publication.
+Further methodological details are described in the ICMR 2026 paper cited in
+the top-level README.
+
+## Citation
+
+If you use this dataset, please follow the citation information in the
+top-level `README.md`.
